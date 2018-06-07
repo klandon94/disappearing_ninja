@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Disappearing Ninja</title>
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+
+            $("img").click(function(){
+                $(this).css("visibility","hidden");
+            })
+
+            $("button").click(function(){
+                $("img").css("visibility", "visible");
+            })
+
+        });
+    </script>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        .row{
+            display:flex;
+            justify-content: space-around;
+            margin-bottom:50px;
+        }
+
+        img{
+            height:200px;
+            width:200px;
+            border:2px solid black;
+        }
+
+        h3{
+            padding:25px;
+            margin-bottom:25px;
+        }
+
+        button{
+            margin-left:50px;
+            margin-top:50px;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3>jQuery - Disappearing Ninjas</h3>
+
+    <div class="row">
+        <img src="c74.jpg" alt="ninja">
+        <img src="c74.jpg" alt="ninja">
+        <img src="c74.jpg" alt="ninja">
+        <img src="c74.jpg" alt="ninja">
+    </div>
+
+    <div class="row">
+        <img src="c74.jpg" alt="ninja">
+        <img src="c74.jpg" alt="ninja">
+        <img src="c74.jpg" alt="ninja">
+        <img src="c74.jpg" alt="ninja">
+    </div>
+    
+    <button>Restore</button>
+
+</body>
+</html>
